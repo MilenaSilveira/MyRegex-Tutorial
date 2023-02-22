@@ -24,9 +24,10 @@ This document will describe the components of an Email validator:
 
 ### Anchors
 
+```
 ^ - Will match beginning of line or text.
 $ - Will match end of line.
-
+```
 ### Quantifiers
 
 Quantifiers determin the amount of class, group or character an input should have to match the desired search information.
