@@ -32,14 +32,14 @@ $ - Will match end of line.
 
 Quantifiers determin the amount of class, group or character an input should have to match the desired search information.
 There are two types of quantifiers, Greedy and Lazy.
-
+```
 * - match zero or more times
 + - match one or more times
 ? match zero or one time
 { n } - match exactly n times
 { n, } - match at least n times
 { n, m } - match from n to m times
-
+```
 
 
 ### Grouping Constructs
