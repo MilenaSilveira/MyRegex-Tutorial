@@ -25,20 +25,20 @@ This document will describe the components of an Email validator:
 ### Anchors
 
 ```
-^  Will match beginning of line or text.
-$  Will match end of line.
+^ - Will match beginning of line or text.
+$ - Will match end of line.
 ```
 ### Quantifiers
 
 Quantifiers determin the amount of classes, groups or characters an input should have to match the desired search information.
 There are two types of quantifiers, Greedy and Lazy.
 ```
-*  match zero or more times
-+  match one or more times
-? match zero or one time
-{ n }  match exactly n times
-{ n, }  match at least n times
-{ n, m }  match from n to m times
+* - matches zero or more times
++ - matches one or more times
+? - matches zero or one time
+{ n } - matches exactly n times
+{ n, } - matches at least n times
+{ n, m } - matches from n to m times
 
 {?} Is added in a Lazy Quantifier.
 ```
@@ -49,9 +49,9 @@ Grouping constructs determin the subexpressions of a regular expression and capt
 We add the expression to the open and close parentheses that identify groups.
 
 ```
-() Read the information that matches what is inside the parentheses.
-(?:) Disables a group inside the parentheses.
-(?<>) Give a name to group inside the parentheses.
+() - Read the information that matches what is inside the parentheses.
+(?:) - Disables a group inside the parentheses.
+(?<>) - Give a name to group inside the parentheses.
 ```
 
 
@@ -59,10 +59,10 @@ We add the expression to the open and close parentheses that identify groups.
 
 Bracket Expressions are used to determin values to be searched. 
 ```
-[a-z]  A single character between a and z.
-[cde]  Searches for c, d or e.
-[0-9]  A single character between 0 and 9.
-[[:alpha:]] Alphabetic order.
+[a-z] - A single character between a and z.
+[cde] - Searches for c, d or e.
+[0-9] - A single character between 0 and 9.
+[[:alpha:]] - Alphabetic order.
 
 ```
 ### Character Classes
@@ -70,10 +70,10 @@ Bracket Expressions are used to determin values to be searched.
 Character classes are used to sort and filter.
 
 ```
-\d It matches a digit.
-\s It matches new lines, spaces and tabs
-\w It matches a word.
-. It matches any character.
+\d - It matches a digit.
+\s - It matches new lines, spaces and tabs
+\w - It matches a word.
+. - It matches any character.
 ```
 
 ### The OR Operator
@@ -81,7 +81,7 @@ Character classes are used to sort and filter.
 The OR is used to find a specified expression within a variety of regular expressions.
 
 ```
-| It is used to match a string.
+| - It is used to match a string.
 ```
 
 ### Flags
@@ -89,17 +89,18 @@ The OR is used to find a specified expression within a variety of regular expres
 Modifies search parameters.
 
 ```
-i It makes the search case sensitive.
-g It makes the search find all matches, not only one result.
-m It is used for multiline mode search.
-u Enables unicode support.
-y Enables sticky mode.
+i - It makes the search case sensitive.
+g - It makes the search find all matches, not only one result.
+m - It is used for multiline mode search.
+u - Enables unicode support.
+y - Enables sticky mode.
 
 ```
 
-
-
 ### Character Escapes
+
+To match a character with it's original meaning we use a backslash ( \ ) before the character.
+
 
 ## Author
 
